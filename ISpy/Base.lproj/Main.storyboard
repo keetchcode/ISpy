@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7T1-un-TyT">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lord-of-the-rings-sean-bean-boromir-1584636601-1200x675" translatesAutoresizingMaskIntoConstraints="NO" id="Vhb-so-rDH">
+                                        <rect key="frame" x="4" y="4" width="385" height="751"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Vhb-so-rDH" firstAttribute="top" secondItem="JZ0-3t-7o1" secondAttribute="top" constant="4" id="cc2-Zb-Xgn"/>
+                                    <constraint firstItem="Vhb-so-rDH" firstAttribute="leading" secondItem="JZ0-3t-7o1" secondAttribute="leading" constant="4" id="nV0-jA-bVb"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JZ0-3t-7o1"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="4e9-12-c1R"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7T1-un-TyT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1pm-vm-1Hv"/>
+                            <constraint firstItem="7T1-un-TyT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HIX-At-CaA"/>
+                            <constraint firstItem="7T1-un-TyT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X2h-EV-96V"/>
+                            <constraint firstItem="7T1-un-TyT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cK6-JR-Zhh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Vhb-so-rDH" id="pXI-un-bCD"/>
+                        <outlet property="scrollView" destination="7T1-un-TyT" id="Vn0-om-AaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lord-of-the-rings-sean-bean-boromir-1584636601-1200x675" width="1200" height="675"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
